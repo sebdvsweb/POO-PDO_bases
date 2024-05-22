@@ -64,4 +64,6 @@ Y inclure les fichiers nécessaires avec PHP : `require './config/database.php';
 La page devra inclure la liste des personnages existants, ainsi que deux formulaires, le premier pour modifier un personnage en base de données, le second pour ajouter un personnage à la base de données.
 
 
+***
 
+Vous pouvez retrouver des explications claires sur le fonctionnemnt de POO/PDO [ici](https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/914293-accedez-aux-donnees-en-php-avec-pdo).
