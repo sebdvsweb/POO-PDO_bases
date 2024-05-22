@@ -57,6 +57,7 @@ Ajouter les getters et setters et les méthodes Save() et getAll() pour modifier
 5. Création de la Page d'Index
 Créez un fichier index.php à la racine de votre projet pour afficher et gérer les personnages.
 Y inclure les fichiers nécessaires avec PHP : `require './config/database.php';` et `require './config/autoload.php';`
+La page devra inclure la liste des personnages existants, ainsi que deux formulaires, le premier pour modifier un personnage en base de données, le second pour ajouter un personnage à la base de données.
 
 
 
