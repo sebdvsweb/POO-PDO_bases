@@ -5,7 +5,7 @@ Cet exercice a pour objectif de vous familiariser avec la programmation orienté
 Vous allez créer une application simple permettant de gérer des personnages stockés en base de données.
 
 ## Étapes à suivre
-1. Configuration de la Base de Données
+#### 1. Configuration de la Base de Données
 Créez une base de données MySQL et une table pour stocker les personnages. Voici les requêtes SQL pour créer la base de données et la table :
 
 ```sql
@@ -24,7 +24,8 @@ INSERT INTO characters (name, role) VALUES ('Jane Smith', 'Mage');
 INSERT INTO characters (name, role) VALUES ('Robert Brown', 'Archer');
 ```
 
-2. Configuration de la Connexion à la Base de Données
+
+#### 2. Configuration de la Connexion à la Base de Données
 Créez un fichier config/database.php pour gérer la connexion à la base de données :
 
 
@@ -39,8 +40,9 @@ try {
 ?>
 ```
 
-3. Autoloading des Classes
-Créez un fichier config/autoload.php pour l'autoloading des classes :
+
+#### 3. Autoloading des Classes
+Créez le fichier `config/autoload.php` pour charger automatiquement les classes à partir du dossier `class`.
 
 ```php
 <?php
@@ -50,11 +52,13 @@ spl_autoload_register(function ($class_name) {
 ?>
 ```
 
-4. Création de la Classe Personnage
-Créez un fichier class/Personnage.php et définissez la classe Personnage avec les propriétés nécessaires : `$id`, `$name`, `$role`
+
+#### 4. Création de la Classe Personnage
+Créez un fichier class/Personnage.php et implémenter la classe Personnage avec les propriétés nécessaires : `id`, `name`, `role`
 Ajouter les getters et setters et les méthodes Save() et getAll() pour modifier ou sélectionner les personnages dans la base de données.
 
-5. Création de la Page d'Index
+
+#### 5. Création de la Page d'Index
 Créez un fichier index.php à la racine de votre projet pour afficher et gérer les personnages.
 Y inclure les fichiers nécessaires avec PHP : `require './config/database.php';` et `require './config/autoload.php';`
 La page devra inclure la liste des personnages existants, ainsi que deux formulaires, le premier pour modifier un personnage en base de données, le second pour ajouter un personnage à la base de données.
